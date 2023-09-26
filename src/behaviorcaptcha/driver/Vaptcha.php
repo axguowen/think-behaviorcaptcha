@@ -29,9 +29,9 @@ class Vaptcha extends Platform
         // 验证场景
         'scene' => 0,
         // 二次验证server字段名 默认server
-        'server_field' => '',
+        'server_field' => 'vaptcha_server',
         // 二次验证token字段名 默认token
-        'token_field' => '',
+        'token_field' => 'vaptcha_token',
     ];
 
     /**

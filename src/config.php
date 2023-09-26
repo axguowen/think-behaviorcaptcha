@@ -23,13 +23,13 @@ return [
             // 极验私钥
             'private_key' => '',
             // 加密模式, 支持md5/sha256/hmac-sha256, 默认为md5
-            'digestmod' => '',
+            'digestmod' => 'md5',
             // 二次验证challenge字段名, 默认geetest_challenge
-            'challenge_field' => '',
+            'challenge_field' => 'geetest_challenge',
             // 二次验证validate字段名, 默认geetest_validate
-            'validate_field' => '',
+            'validate_field' => 'geetest_validate',
             // 二次验证seccode字段名, 默认geetest_seccode
-            'seccode_field' => '',
+            'seccode_field' => 'geetest_seccode',
         ],
         // vaptcha平台
         'vaptcha' => [
@@ -42,9 +42,9 @@ return [
             // 验证场景
             'scene' => 0,
             // 二次验证server字段名 默认server
-            'server_field' => '',
+            'server_field' => 'vaptcha_server',
             // 二次验证token字段名 默认token
-            'token_field' => '',
+            'token_field' => 'vaptcha_token',
         ],
     ],
 ];

@@ -34,11 +34,11 @@ class Geetest extends Platform
         // 加密模式, 支持md5/sha256/hmac-sha256, 默认为md5
         'digestmod' => 'md5',
         // 二次验证challenge字段名, 默认geetest_challenge
-        'challenge_field' => '',
+        'challenge_field' => 'geetest_challenge',
         // 二次验证validate字段名, 默认geetest_validate
-        'validate_field' => '',
+        'validate_field' => 'geetest_validate',
         // 二次验证seccode字段名, 默认geetest_seccode
-        'seccode_field' => '',
+        'seccode_field' => 'geetest_seccode',
     ];
 
 	/**
@@ -246,7 +246,7 @@ class Geetest extends Platform
         ];
 
         // 获取响应
-        $response = HttpClient::post(self::BASE_URL . '/validate.php', $data, ['Content-Type' => 'application/x-www-form-urlencoded']);
+        $response = HttpClient::post(self::BASE_URL . '/validate.php', http_build_query($data), ['Content-Type' => 'application/x-www-form-urlencoded']);
         // 响应错误
         if (!$response->ok()) {
             // 返回异常
