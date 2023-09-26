@@ -41,9 +41,9 @@ return [
             'key' => '',
             // 验证场景
             'scene' => 0,
-            // 二次验证server字段名 默认server
+            // 二次验证server字段名 默认vaptcha_server
             'server_field' => 'vaptcha_server',
-            // 二次验证token字段名 默认token
+            // 二次验证token字段名 默认vaptcha_token
             'token_field' => 'vaptcha_token',
         ],
     ],
