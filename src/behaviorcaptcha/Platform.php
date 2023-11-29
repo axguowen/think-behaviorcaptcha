@@ -21,6 +21,12 @@ abstract class Platform implements PlatformInterface
      * @var array
      */
 	protected $options = [];
+    
+	/**
+     * 驱动句柄
+     * @var array
+     */
+	protected $handler;
 
     /**
      * 架构函数
