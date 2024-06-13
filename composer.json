@@ -27,7 +27,7 @@
     "extra": {
         "think": {
             "config": {
-                "behaviorcaptcha": "src/config.php"
+                "behaviorcaptcha": "src/behaviorcaptcha/config.php"
             }
         }
     }
